@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="css/form.css">
+    </head>
+    <body>
+        <script>  
+        function validateform(){  
+        var number=document.myform.number.value;  
+        var password=document.myform.password.value;  
+        var pass=password.charAt(0);
+   
+        if (number.length != 10){  
+            alert("Invalid phonenumber; must be ten digits");  
+        }  
+           
+        if(password != /^(?=.*\d)(?=.*[\@\#\$\%\^\&\*\(\)\_\+\!])(?=.*[A-Z])[0-9a-zA-Z]{0,9}$/){  
+            alert("Password must start  with capital character , at least 8 characters , onedigit ,  spicial character , no wite spacing"); 
+        } 
+    }  
+        </script>
+        <header>
+            <nav>
+                <ul>
+                    <a  class="home" href="home.html">home</a> 
+                    <li class="drop"><a  href="men.html">men </a>
+                        <div class="cat">
+                            <a href="men.html#dresses" >suits</a><br>
+                            <a href="men.html#casual">casual</a>
+                        </div>
+                    </li>    
+                    <li class="drop"><a href="women.html">women</a>
+                        <div class="cat">
+                            <a href="women.html#dresses" >dresses</a><br>
+                            <a href="women.html#casual">casual</a>
+                        </div>
+                    </li>    
+
+                <li class="drop">   
+                    <a href="accessories.html">accessories</a>
+                    <div class="cat">
+                        <a href="accessories.html#dresses" >watch</a><br>
+                        <a href="accessories.html#casual">shoes</a>
+                    </div>
+                </li>    
+
+                </ul>
+                
+            </nav>
+            <h2>fas<span>h</span>ion</h2>
+        </header>
+          
+        <div class="signUp">  
+        <form name="myform" method="post" onsubmit="return validateform()" >  
+            <input type="text" placeholder="Firstname" required>
+            <input name="lstname" type="text" placeholder="Lastname" required>	
+            <input name="email" type="email" placeholder="Email" required>	
+            <input  name="number"  type="number" placeholder="PhoneNumber" required >	
+
+            <input name="Adress" type="txt" placeholder="Adress" required>
+
+            <div class="g">
+	
+                <input class="gender" type="radio"  name="g" id=#g1 required><label for="g1">male</label>
+                <input class="gender" type="radio"  name="g" id=#g2 required><label for="g2">female</label>
+            </div>
+            <input name="password" type="password" placeholder="Password" required>
+            <input class="signsub" name="submit" type="submit"  value="Signup" required>
+        </form> 
+        </div>     
+        </body>
+</html>

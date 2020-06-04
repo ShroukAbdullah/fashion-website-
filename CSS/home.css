@@ -1,0 +1,161 @@
+body{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin:0;
+    padding:0;
+    overflow: hidden ;
+    background-color: ;
+    color: blanchedalmond;
+    background-image:url(showcase.jpg);
+    background-size:cover;
+    background-position: center;
+    background-color: rgba(0,0,0,.9);
+    background-blend-mode: multiply;
+
+}
+
+header{
+    width:100%;
+    height:;
+    position:;
+    padding:0;
+    margin: 0;
+    /*border-bottom:rgb(168, 67, 72) solid ;*/
+
+}
+nav {
+    float: right;
+    margin-top: -20px;
+    padding-top: 0px;
+    border:#fff ;
+
+}
+nav ul li{
+    display: inline-block;
+    padding:0px ;
+    margin-top:0px;
+    list-style-type: none;
+
+   /* padding:3px 35px;*/
+}
+nav ul a{
+    text-decoration: none;
+    color: blanchedalmond;
+    padding:3px 10px;
+    border:rgb(168, 67, 72) ;
+    border-radius:40px ;
+    margin:5px;
+    font-size: 25px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+
+}
+nav ul .home{
+    background-color: rgb(168, 67, 72);
+}
+nav ul a:hover{
+    background-color: rgb(168, 67, 72)      ;
+
+}
+nav ul li a{
+    text-decoration: none;
+    border: hidden;
+    background-color: none;
+}
+.cat{
+    display: none; 
+    position: absolute;
+    
+    
+
+}
+.drop:hover .cat{
+    display: block;
+}
+
+header h2{
+    margin:10px;
+    margin-top: 5;  
+    border:#fff ;
+    float:left;
+    color: blanchedalmond;
+    letter-spacing: 20px;
+    font-size: 35px;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+
+
+}
+h2 span{
+    color:rgb(168, 67, 72);
+    font-size: 40px;
+
+}
+.content {
+    border:#fff ;
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 350px;
+    padding-top:0;
+    width: 50%;
+    text-align:center;
+    line-height: 100px;
+}
+.content h3{
+    text-transform: uppercase;
+    word-spacing: 5px;
+
+}
+.content h3 span{
+    color: rgb(168, 67, 72);
+    font-variant: small-caps;
+    text-transform: capitalize;
+    padding-bottom: 0;
+}
+ .buttons{
+    border:#fff ;
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 370px;
+    width: 608px;
+}
+
+.buttons a , .buttons button{
+    padding:10px 100px;
+    border:  rgb(168, 67, 72) solid;
+    color: rgb(168, 67, 72);
+    text-transform: capitalize;
+    font-size: 30px;
+    border-radius: 100px;
+    font-weight: 550;
+}
+.buttons .login {
+    background-color: blanchedalmond;
+    color: rgb(168, 67, 72);
+    cursor: pointer;
+    
+
+}
+.buttons a{
+    text-decoration: none;    
+}
+.buttons a {
+    float:right;
+    color: blanchedalmond;
+    background-color: rgb(168, 67, 72);
+    cursor: pointer;
+}
+.buttons .signup:hover {
+    background-color:blanchedalmond;
+    color:rgb(168, 67, 72);
+}
+.signup a{color: blanchedalmond;}
+.signup a:hover{
+    color:rgb(168, 67, 72);
+}
+.login:hover{
+    background-color: rgb(168, 67, 72);
+    color: blanchedalmond;
+}
+
+@media(min-width: 768px)

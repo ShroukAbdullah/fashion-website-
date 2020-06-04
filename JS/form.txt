@@ -1,0 +1,15 @@
+<script>  
+        function validateform(){  
+        var number=document.myform.number.value;  
+        var password=document.myform.password.value;  
+        var pass=password.charAt(0);
+   
+        if (number.length != 10){  
+            alert("Invalid phonenumber; must be ten digits");  
+        }  
+           
+        if(password != /^(?=.*\d)(?=.*[\@\#\$\%\^\&\*\(\)\_\+\!])(?=.*[A-Z])[0-9a-zA-Z]{0,9}$/){  
+            alert("Password must start  with capital character , at least 8 characters , onedigit ,  spicial character , no wite spacing"); 
+        } 
+    }  
+ </script>
